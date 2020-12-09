@@ -1,0 +1,36 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Asteroids Destroyer</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="asteroid.svg">
+    </head>
+    <body>
+        <header onclick="enableSecretMode()">Asteroids Destroyer</header>
+        <div class="game">
+            <canvas ondblclick="fullScreen()" class="game-canvas" id="game-canvas" width="1000" height="670"></canvas>
+            <div class="options">
+                <input type="color" name="border-color" id="border-color" value="#FFFFFF">
+                <button onclick="fullScreen()">Tela cheia</button>
+                                
+                <button onclick="toggleSound()" class="toggle-sound">Desativar 🔊</button>
+                <button onclick="toggleMusic()" class="toggle-music">Desativar 🎵</button>
+                <button onclick="togglePause()" class="toggle-pause">Pausar</button>
+
+                <input type="checkbox" name="show-dot" class="check-show-dot">
+                Mostrar ponto no centro
+                <input type="checkbox" name="show-collision" class="check-show-collision">
+                Mostrar colisões
+                <input type="checkbox" name="show-asteroids" class="check-show-asteroids" checked="true">
+                Mostrar número de asteroides
+                
+            </div>
+        </div>
+        <a href="https://www.youtube.com/channel/UCYGcMtRTLWQHgLq4V3bP3sA" target="_blank">Crésditos a Mt.FordStudios</a>
+
+        
+
+        <script src="script.js"></script>
+    </body>
+</html>
